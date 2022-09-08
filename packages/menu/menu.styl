@@ -1,0 +1,38 @@
+.px-menu 
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-variant: tabular-nums;
+  line-height: 1.5;
+  font-feature-settings: "tnum";
+  margin: 0;
+  padding: 0;
+  color: rgba(0,0,0,.65);
+  list-style: none;
+  background: #fff;
+  outline: none;
+  // box-shadow: 0 2px 8px rgb(0 0 0 / 15%);
+  border-right: 1px solid #e8e8e8;
+  transition: background .3s,width .3s cubic-bezier(.2,0,0,1) 0s;
+  zoom: 1;
+
+  .px-menu-inline, .ant-menu-vertical, .ant-menu-vertical-left
+    border-right: 1px solid #e8e8e8;
+
+.px-menu-item,.px-sub-menu__title
+  height: 56px;
+  line-height: 56px;
+  font-size: 14px;
+  color: #303133;
+  padding: 0 20px;
+  list-style: none;
+  cursor: pointer;
+  position: relative;
+  box-sizing: border-box;
+  white-space: nowrap;
+  &:hover
+    background-color: #ecf5ff
+
+.px-sub-menu 
+  .px-menu 
+    border: none
